@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seletiva Jovem Aprendiz - Microlins</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #004aad, #0077b6);
+      color: #333;
+    }
+    .container {
+      background-color: #fff;
+      max-width: 720px;
+      margin: 60px auto;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+    h1 {
+      text-align: center;
+      color: #004aad;
+      margin-bottom: 8px;
+    }
+    p.subtitulo {
+      text-align: center;
+      font-size: 15px;
+      margin-bottom: 32px;
+      color: #555;
+    }
+    label {
+      display: block;
+      margin: 16px 0 6px;
+      font-weight: 600;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      font-family: 'Poppins', sans-serif;
+    }
+    textarea {
+      resize: vertical;
+    }
+    button {
+      margin-top: 30px;
+      width: 100%;
+      padding: 16px;
+      background-color: #004aad;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background-color: #003080;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 13px;
+      color: #aaa;
+    }
+    .badge {
+      text-align: center;
+      font-size: 13px;
+      background-color: #d0ecff;
+      color: #004aad;
+      padding: 6px 14px;
+      border-radius: 25px;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="badge">Parcerias com empresas contratantes</div>
+    <h1>Processo Seletivo Jovem Aprendiz</h1>
+    <p class="subtitulo">Preencha com atenção. Essa pode ser sua porta de entrada para o mercado de trabalho com apoio da Microlins.</p>
+    <form action="https://formsubmit.co/SEUEMAILAQUI" method="POST">
+      <input type="hidden" name="_subject" value="Novo Candidato - Jovem Aprendiz Microlins">
+      <input type="hidden" name="_captcha" value="false">
+
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="data_nascimento">Data de nascimento:</label>
+      <input type="date" id="data_nascimento" name="data_nascimento" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefone">Telefone / WhatsApp:</label>
+      <input type="text" id="telefone" name="telefone" required>
+
+      <label for="responsavel">Telefone do responsável:</label>
+      <input type="text" id="responsavel" name="responsavel" required>
+
+      <label for="endereco">Endereço completo:</label>
+      <input type="text" id="endereco" name="endereco" required>
+
+      <label for="idade">Idade:</label>
+      <input type="number" id="idade" name="idade" min="14" max="24" required>
+
+      <label for="escolaridade">Você está estudando atualmente?</label>
+      <select id="escolaridade" name="escolaridade" required>
+        <option value="">-- Selecione --</option>
+        <option value="Sim, ensino fundamental">Sim, ensino fundamental</option>
+        <option value="Sim, ensino médio">Sim, ensino médio</option>
+        <option value="Sim, ensino técnico">Sim, ensino técnico</option>
+        <option value="Não estou estudando">Não estou estudando</option>
+      </select>
+
+      <label for="instituicao">Se estuda, informe o nome da instituição:</label>
+      <input type="text" id="instituicao" name="instituicao">
+
+      <label for="emprego">Atualmente está trabalhando?</label>
+      <select id="emprego" name="emprego" required>
+        <option value="">-- Selecione --</option>
+        <option value="Sim">Sim</option>
+        <option value="Não">Não</option>
+      </select>
+
+      <label for="disponibilidade">Tem disponibilidade de horário para entrevistas e treinamentos?</label>
+      <select id="disponibilidade" name="disponibilidade" required>
+        <option value="">-- Selecione --</option>
+        <option value="Sim, manhã e tarde">Sim, manhã e tarde</option>
+        <option value="Sim, apenas à tarde">Sim, apenas à tarde</option>
+        <option value="Não tenho disponibilidade">Não tenho disponibilidade</option>
+      </select>
+
+      <label for="especializacao">Possui algum curso ou especialização?</label>
+      <textarea id="especializacao" name="especializacao" rows="3" placeholder="Informe cursos ou experiências anteriores."></textarea>
+
+      <label for="motivacao">Por que deseja participar deste processo seletivo?</label>
+      <textarea id="motivacao" name="motivacao" rows="4" placeholder="Fale um pouco sobre seus objetivos profissionais e interesse pela vaga."></textarea>
+
+      <button type="submit">Enviar meu Cadastro</button>
+    </form>
+    <div class="footer">
+      © 2025 Microlins | Jovem Aprendiz • Unidade Oficial de Desenvolvimento Profissional
+    </div>
+  </div>
+</body>
+</html>
